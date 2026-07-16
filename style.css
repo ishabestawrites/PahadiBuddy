@@ -1,0 +1,1010 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    color:#222;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* ==========================
+   NAVBAR
+========================== */
+
+header{
+
+    width:100%;
+
+}
+
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+}
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:white;
+
+}
+
+
+.logo img{
+
+    width:55px;
+    height:55px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+
+.logo h2{
+
+    color:white;
+    font-size:28px;
+    font-weight:700;
+
+}
+
+
+.nav-links{
+
+    display:flex;
+    gap:35px;
+
+    list-style:none;
+
+}
+
+
+.nav-links a{
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+}
+
+
+.nav-links a:hover{
+
+    color:#d4af37;
+
+}
+
+
+.menu-icon{
+
+    display:none;
+
+    color:white;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+
+.hero{
+
+    height:100vh;
+
+    width:100%;
+
+    position:relative;
+
+}
+
+
+.slider{
+
+    height:100%;
+
+}
+
+
+.slide{
+
+    height:100vh;
+
+    width:100%;
+
+    position:absolute;
+
+    opacity:0;
+
+    transition:opacity 1s ease;
+
+}
+
+
+.slide.active{
+
+    opacity:1;
+
+}
+
+
+.slide img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+.overlay{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.45);
+
+}
+
+
+
+.hero-content{
+
+    position:absolute;
+
+    top:50%;
+
+    left:8%;
+
+    transform:translateY(-50%);
+
+    max-width:650px;
+
+    color:white;
+
+}
+
+
+.hero-content h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+
+.hero-content p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin-bottom:35px;
+
+}
+
+
+.hero-btn{
+
+    display:inline-block;
+
+    background:#d4af37;
+
+    color:white;
+
+    padding:14px 35px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+
+.hero-btn:hover{
+
+    background:#b8962e;
+
+    transform:translateY(-3px);
+
+}
+/* ==========================
+   SECTION COMMON STYLE
+========================== */
+
+.packages,
+.why-us,
+.reviews{
+
+    padding:80px 8%;
+
+}
+
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+.section-title h2{
+
+    font-size:38px;
+
+    color:#1f4d3b;
+
+    margin-bottom:10px;
+
+}
+
+
+.section-title p{
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+   DESTINATIONS
+========================== */
+
+.destinations{
+
+    padding:80px 8%;
+
+    background:#fff;
+
+}
+.destination-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+.destination-card{
+
+    position:relative;
+
+    aspect-ratio:1/1;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:block;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+
+    transition:0.4s ease;
+
+}
+
+.destination-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:0.5s ease;
+
+}
+
+.destination-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.destination-card:hover img{
+
+    transform:scale(1.1);
+
+}
+
+.destination-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:20px;
+
+    background:linear-gradient(to top,
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.15),
+    transparent);
+
+}
+
+.destination-overlay h3{
+
+    color:#fff;
+
+    font-size:22px;
+
+    margin-bottom:6px;
+
+}
+
+.destination-overlay p{
+
+    color:#eee;
+
+    font-size:14px;
+
+    margin-bottom:12px;
+
+}
+
+.destination-overlay span{
+
+    color:#d4af37;
+
+    font-weight:600;
+
+}
+/* ==========================
+   WHY CHOOSE US
+========================== */
+
+
+.why-us{
+
+    background-image:url(flowers.jpeg );
+
+}
+
+
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.why-card{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+
+}
+
+
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.why-card h3{
+
+    color:#295349;
+
+    margin-bottom:15px;
+
+    font-size:20px;
+
+}
+
+
+
+.why-card p{
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+
+/* ==========================
+   FLOATING BUTTONS
+========================== */
+
+.floating-buttons{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    z-index:999;
+
+}
+
+
+.floating-buttons a{
+
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    font-size:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+
+    transition:0.3s;
+
+}
+
+
+.floating-buttons a:hover{
+
+    transform:scale(1.1);
+
+}
+
+.whatsapp{
+
+    background:#25D366;
+
+}
+
+
+.call{
+
+    background:#1f4d3b;
+
+}
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    padding:60px 8% 20px;
+
+}
+
+
+.footer-content{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+}
+
+
+.footer-box h3{
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+    color:#d4af37;
+
+}
+
+
+
+.footer-box p{
+
+    color:#ccc;
+
+    line-height:1.7;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.footer-box a{
+
+    display:block;
+
+    color:#ccc;
+
+    margin-bottom:12px;
+
+    transition:0.3s;
+
+}
+
+
+.footer-box a:hover{
+
+    color:#d4af37;
+
+}
+
+
+
+.footer-bottom{
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,0.15);
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    color:#aaa;
+
+}
+
+
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+
+@media(max-width:900px){
+.destination-grid{
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+}
+
+.destination-card{
+
+    aspect-ratio:16/9;
+
+    max-width:550px;
+
+    width:100%;
+
+    margin:auto;
+
+}
+
+.destination-overlay{
+
+    padding:18px;
+
+}
+
+.destination-overlay h3{
+
+    font-size:22px;
+
+}
+
+.destination-overlay p{
+
+    font-size:15px;
+
+}
+
+.navbar{
+
+    padding:18px 5%;
+
+}
+
+
+
+.nav-links{
+
+    display:none;
+
+}
+
+
+
+.menu-icon{
+
+    display:block;
+
+}
+
+
+
+.logo h2{
+
+    font-size:22px;
+
+}
+
+
+
+.logo img{
+
+    width:45px;
+
+    height:45px;
+
+}
+
+
+
+.hero-content{
+
+    left:5%;
+
+    right:5%;
+
+    text-align:center;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:35px;
+
+}
+
+
+
+.hero-content p{
+
+    font-size:15px;
+
+}
+
+
+
+.package-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.why-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.review-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.footer-content{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:30px;
+
+}
+
+
+
+.cta h2{
+
+    font-size:30px;
+
+}
+
+
+}
+
+
+
+@media(max-width:500px){
+
+    .destination-grid{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+
+}
+
+.destination-card{
+
+    aspect-ratio:16/9;
+
+}
+
+.destination-overlay{
+
+    padding:16px;
+
+}
+
+.destination-overlay h3{
+
+    font-size:20px;
+
+}
+
+.destination-overlay p{
+
+    font-size:14px;
+
+}
+
+.hero-content h1{
+
+    font-size:30px;
+
+}
+
+
+
+.hero-content p{
+
+    font-size:14px;
+
+}
+
+
+
+.hero-btn{
+
+    padding:12px 28px;
+
+}
+
+
+
+.floating-buttons{
+
+    right:15px;
+
+    bottom:15px;
+
+}
+
+
+
+.floating-buttons a{
+
+    width:50px;
+
+    height:50px;
+
+}
+}
+.destination-overlay h3{
+
+    font-size:14px;
+
+    line-height:1.3;
+
+}
+.destination-overlay{
+
+    padding:12px;
+
+}
+
+
+/* ==========================
+   MOBILE MENU
+========================== */
+
+
+.mobile-menu{
+    display:none;
+    position:fixed;
+    top:80px;
+    right:20px;
+    width:220px;
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    z-index:9999;
+}
+
+.mobile-menu.open{
+    display:block;
+}
+
+
+.mobile-menu a{
+
+    display:block;
+
+    color:#1f4d3b;
+
+    padding:12px 0;
+
+    font-weight:500;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+.mobile-menu a:last-child{
+
+    border-bottom:none;
+
+}
+
+
+
+.mobile-menu.open{
+
+    display:block;
+
+}
+.footer-box a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#ccc;
+    margin-bottom:12px;
+    transition:0.3s;
+}
+
+
+.footer-box a i{
+    font-size:18px;
+}
+
+
+.footer-box a:hover{
+    color:#d4af37;
+}
+.navbar{
+
+    transition:0.3s ease;
+
+}
+
+.navbar.scrolled .logo h2{
+
+    color:#1f4d3b;
+
+}
+
+.navbar.scrolled .nav-links a{
+
+    color:#1f4d3b;
+
+}
+
+.navbar.scrolled .menu-icon{
+
+    color:#1f4d3b;
+
+}
+
+/* ==========================
+   STICKY NAVBAR
+========================== */
+
+.navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background: transparent;
+    transition: all .3s ease;
+}
+
+.navbar.scrolled{
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
