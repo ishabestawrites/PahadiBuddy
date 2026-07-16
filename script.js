@@ -24,7 +24,6 @@ function showSlide() {
 if (slides.length > 0) {
     setInterval(showSlide, 3000);
 }
-
 // ===============================
 // MOBILE MENU
 // ===============================
@@ -33,9 +32,35 @@ const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
 if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener("click", () => {
+
+    // Open / Close menu
+    menuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
         mobileMenu.classList.toggle("open");
     });
+
+    // Close when clicking anywhere else
+    document.addEventListener("click", (e) => {
+        if (
+            !mobileMenu.contains(e.target) &&
+            !menuBtn.contains(e.target)
+        ) {
+            mobileMenu.classList.remove("open");
+        }
+    });
+
+    // Close when a menu item is clicked
+    mobileMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.remove("open");
+        });
+    });
+
+    // Close when user scrolls
+    window.addEventListener("scroll", () => {
+        mobileMenu.classList.remove("open");
+    });
+
 }
 
 // ===============================
