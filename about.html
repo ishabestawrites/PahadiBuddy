@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | PahadiBuddy</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* ABOUT BACKGROUND */
+
+.about-page{
+
+    background:url("slide3.jpeg") center/cover fixed;
+
+    position:relative;
+
+    color:white;
+
+}
+
+
+.about-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.55);
+
+}
+
+
+/* CONTENT */
+
+.about-container{
+
+    position:relative;
+
+    z-index:2;
+
+    padding:140px 8% 90px;
+
+}
+
+
+/* INTRO BOX */
+
+.about-heading{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    border-radius:22px;
+
+    padding:40px;
+
+    transition:.3s;
+
+}
+
+
+.about-heading:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d4af37;
+
+}
+
+
+.about-heading h2{
+
+    color:#d4af37;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+
+.about-heading p{
+
+    color:#eee;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+/* FEATURES */
+
+.feature-box i{
+
+    width:75px;
+    height:75px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    font-size:32px;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+
+/* Different icon colours */
+
+.feature-box:nth-child(1) i{
+    background:#2e7d32;
+}
+
+
+.feature-box:nth-child(2) i{
+    background:#0288d1;
+}
+
+
+.feature-box:nth-child(3) i{
+    background:#f57c00;
+}
+
+
+.feature-box:nth-child(4) i{
+    background:#6a1b9a;
+}
+
+
+.feature-box:nth-child(5) i{
+    background:#8d6e63;
+}
+
+
+.feature-box:nth-child(6) i{
+    background:#d81b60;
+}
+
+
+
+.feature-box:hover i{
+
+    transform:translateY(-5px) scale(1.1);
+
+}
+.feature-box i{
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto 18px;
+
+    border-radius:50%;
+
+    font-size:24px;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+
+/* Keep outer boxes same */
+
+.feature-box{
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+.feature-box:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d4af37;
+
+}
+
+
+/* Different icon colours */
+
+.feature-box:nth-child(1) i{
+    background:#2e7d32;
+}
+
+.feature-box:nth-child(2) i{
+    background:#0288d1;
+}
+
+.feature-box:nth-child(3) i{
+    background:#f57c00;
+}
+
+.feature-box:nth-child(4) i{
+    background:#6a1b9a;
+}
+
+.feature-box:nth-child(5) i{
+    background:#8d6e63;
+}
+
+.feature-box:nth-child(6) i{
+    background:#d81b60;
+}
+
+
+.feature-box:hover i{
+
+    transform:scale(1.12);
+
+}
+.features{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.features{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.about-heading h2{
+
+    font-size:26px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="about-page">
+
+
+<header>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<img src="logo.jpeg">
+
+<h2>PahadiBuddy</h2>
+
+</a>
+
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="packages.html">Tour Packages</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+<div class="menu-icon" id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+
+</nav>
+
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="packages.html">Tour Packages</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+</header>
+
+
+
+<section class="about-container">
+
+
+<div class="about-heading">
+
+
+
+
+<p>
+PahadiBuddy is your trusted travel partner for exploring the beauty of Himachal Pradesh and beyond. We create personalised journeys that bring you closer to nature, culture, and unforgettable mountain experiences.
+</p>
+
+</div>
+
+
+
+
+<div class="features">
+
+
+
+<div class="feature-box">
+
+<i class="fa-solid fa-person-hiking"></i>
+
+<h3>Local Mountain Expertise</h3>
+
+<p>
+Explore Himachal with people who understand the mountains, culture, and hidden gems.
+</p>
+
+</div>
+
+
+
+<div class="feature-box">
+
+<i class="fa-solid fa-comments"></i>
+
+<h3>24/7 Travel Assistance</h3>
+
+<p>
+We are always available to support you throughout your journey.
+</p>
+
+</div>
+
+
+
+<div class="feature-box">
+
+<i class="fa-solid fa-route"></i>
+
+<h3>Customized Travel Plans</h3>
+
+<p>
+Trips designed according to your needs, interests, and budget.
+</p>
+
+</div>
+
+
+
+
+<div class="feature-box">
+
+<i class="fa-solid fa-compass"></i>
+
+<h3>Complete Travel Solutions</h3>
+
+<p>
+From transport and stays to sightseeing, we handle every detail.
+</p>
+
+</div>
+
+
+
+
+<div class="feature-box">
+
+<i class="fa-solid fa-hotel"></i>
+
+<h3>Comfort & Reliability</h3>
+
+<p>
+Safe stays and trusted services for a stress-free experience.
+</p>
+
+</div>
+
+
+
+
+<div class="feature-box">
+
+<i class="fa-solid fa-camera"></i>
+
+<h3>Memorable Experiences</h3>
+
+<p>
+Creating journeys filled with adventure and lifelong memories.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+</div>
+
+
+
+<div class="floating-buttons">
+
+<a href="https://wa.me/917876416232" class="whatsapp" target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<a href="tel:+919805000742" class="call">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+</div>
+
+
+
+<footer>
+
+<div class="footer-content">
+
+
+<div class="footer-box">
+
+<h3>PahadiBuddy</h3>
+
+<p>
+Your trusted travel companion for unforgettable journeys.
+</p>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="packages.html">Tour Packages</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h3>Contact</h3>
+
+<a href="tel:+919805000742">
+<i class="fa-solid fa-phone"></i>
+9805000742
+</a>
+
+
+<a href="https://wa.me/917876416232">
+<i class="fa-brands fa-whatsapp"></i>
+7876416232
+</a>
+
+
+<a href="mailto:pahadibuddyofficial@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+pahadibuddyofficial@gmail.com
+</a>
+
+
+<a href="https://instagram.com/pahadibuddy_">
+<i class="fa-brands fa-instagram"></i>
+@PahadiBuddy_
+</a>
+
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+<p>© 2026 PahadiBuddy. All Rights Reserved.</p>
+
+</div>
+
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
