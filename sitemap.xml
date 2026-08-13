@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://pahadibuddy.com/</loc>
   </url>
-
   <url>
     <loc>https://pahadibuddy.com/about.html</loc>
   </url>
-
-  <url>
-    <loc>https://pahadibuddy.com/services.html</loc>
-  </url>
-
-  <url>
-    <loc>https://pahadibuddy.com/destinations.html</loc>
-  </url>
-
   <url>
     <loc>https://pahadibuddy.com/contact.html</loc>
   </url>
-
+  <url>
+    <loc>https://pahadibuddy.com/kashmir.html</loc>
+  </url>
+  <url>
+    <loc>https://pahadibuddy.com/ladakh.html</loc>
+  </url>
+  <url>
+    <loc>https://pahadibuddy.com/nepal.html</loc>
+  </url>
+  <url>
+    <loc>https://pahadibuddy.com/packages.html</loc>
+  </url>
 </urlset>
