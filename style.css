@@ -1283,3 +1283,568 @@ footer{
 }
 
 }
+/* =========================================
+   PLAN YOUR TRIP PAGE
+========================================= */
+
+.plan-trip{
+
+    min-height:100vh;
+
+    padding:145px 20px 75px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+        linear-gradient(
+            rgba(8,22,32,0.58),
+            rgba(8,22,32,0.78)
+        ),
+        url("slide2.jpeg") center / cover no-repeat;
+
+    position:relative;
+}
+
+
+/* =========================================
+   FORM BOX
+========================================= */
+
+.plan-box{
+
+    width:100%;
+
+    max-width:720px;
+
+    padding:45px 45px 42px;
+
+    background:rgba(255,255,255,0.13);
+
+    border:1px solid rgba(255,255,255,0.28);
+
+    border-radius:28px;
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.35);
+
+    color:white;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.plan-heading{
+    text-align:center;
+    margin-bottom:0;
+}
+
+.plan-heading::before{
+    content:"✦";
+    display:block;
+    font-size:25px;
+    color:#f4c542;
+    margin-bottom:8px;
+}
+
+.plan-heading h1{
+    margin:0;
+    font-size:38px;
+    font-weight:700;
+    letter-spacing:-0.5px;
+}
+
+.plan-heading p{
+    margin:10px auto 0;
+    max-width:500px;
+    font-size:15px;
+    line-height:1.6;
+    color:rgba(255,255,255,0.87);
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.trip-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:19px;
+
+    /*
+       EXTRA SPACE BETWEEN
+       HEADING AND FORM
+    */
+
+    margin-top:42px;
+}
+
+
+/* =========================================
+   TWO COLUMN ROW
+========================================= */
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:16px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:7px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.form-group label{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:white;
+
+    padding-left:4px;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.form-group input{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:15px 17px;
+
+    border:1px solid rgba(255,255,255,0.30);
+
+    border-radius:13px;
+
+    background:rgba(255,255,255,0.95);
+
+    color:#263746;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:14px;
+
+    outline:none;
+
+    transition:0.3s ease;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.form-group input::placeholder{
+    color:#8b949c;
+}
+
+
+/* =========================================
+   INPUT FOCUS
+========================================= */
+
+.form-group input:focus{
+
+    border-color:#f4c542;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(244,197,66,0.18);
+
+    transform:translateY(-1px);
+}
+
+
+/* =========================================
+   NUMBER INPUT
+========================================= */
+
+.form-group input[type="number"]{
+
+    appearance:textfield;
+
+    -moz-appearance:textfield;
+}
+
+.form-group input[type="number"]::-webkit-inner-spin-button,
+.form-group input[type="number"]::-webkit-outer-spin-button{
+
+    opacity:1;
+}
+
+
+/* =========================================
+   PLAN BUTTON
+========================================= */
+
+.plan-button{
+
+    margin-top:7px;
+
+    width:100%;
+
+    padding:16px 24px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#f4c542;
+
+    color:#17232c;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    transition:all 0.3s ease;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,0.20);
+}
+
+.plan-button i{
+    transition:transform 0.3s ease;
+}
+
+.plan-button:hover{
+
+    background:#ffd95c;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(0,0,0,0.28);
+}
+
+.plan-button:hover i{
+    transform:translateX(5px);
+}
+
+.plan-button:active{
+    transform:translateY(0);
+}
+
+
+/* =========================================
+   DESKTOP / TABLET RESPONSIVE
+========================================= */
+
+@media(max-width:900px){
+
+    .destination-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .destination-card{
+        aspect-ratio:16/9;
+        max-width:550px;
+        width:100%;
+        margin:auto;
+    }
+
+    .destination-overlay{
+        padding:18px;
+    }
+
+    .destination-overlay h3{
+        font-size:22px;
+    }
+
+    .destination-overlay p{
+        font-size:15px;
+    }
+
+    .navbar{
+        padding:18px 5%;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-icon{
+        display:block;
+    }
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .logo img{
+        width:45px;
+        height:45px;
+    }
+
+    .hero-content{
+        left:5%;
+        right:5%;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:35px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .package-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .review-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-content{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .cta h2{
+        font-size:30px;
+    }
+}
+
+
+/* =========================================
+   CONTACT MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .contact-hero{
+        padding:120px 5% 70px;
+    }
+
+    .contact-heading h1{
+        font-size:38px;
+    }
+
+    .contact-heading p{
+        font-size:16px;
+    }
+
+    .contact-item{
+        padding:18px;
+    }
+
+    .contact-icon{
+        width:55px;
+        height:55px;
+    }
+
+    .contact-icon i{
+        font-size:22px;
+    }
+
+    .contact-item h3{
+        font-size:20px;
+    }
+
+    .contact-item p{
+        font-size:14px;
+    }
+}
+
+
+/* =========================================
+   PLAN YOUR TRIP MOBILE
+========================================= */
+
+@media(max-width:700px){
+
+    .plan-trip{
+
+        min-height:auto;
+
+        padding:115px 15px 50px;
+
+        align-items:center;
+    }
+
+    .plan-box{
+
+        padding:30px 20px;
+
+        border-radius:23px;
+    }
+
+    .plan-heading{
+
+        margin-bottom:0;
+    }
+
+    .plan-heading h1{
+        font-size:30px;
+    }
+
+    .plan-heading p{
+        font-size:13px;
+    }
+
+    .trip-form{
+
+        margin-top:32px;
+
+        gap:17px;
+    }
+
+    .form-row{
+
+        grid-template-columns:1fr;
+
+        gap:17px;
+    }
+
+    .form-group input{
+
+        padding:14px 15px;
+    }
+
+    .plan-button{
+
+        padding:15px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media(max-width:550px){
+
+    .contact-item{
+        padding:16px;
+    }
+
+    .left{
+        gap:15px;
+    }
+
+    .contact-icon{
+        width:48px;
+        height:48px;
+    }
+
+    .contact-item h3{
+        font-size:18px;
+    }
+
+    .contact-item p{
+        font-size:13px;
+    }
+
+    .contact-heading h1{
+        font-size:30px;
+    }
+
+    .contact-heading p{
+        font-size:14px;
+    }
+
+    .destination-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .destination-card{
+        aspect-ratio:16/9;
+    }
+
+    .destination-overlay{
+        padding:16px;
+    }
+
+    .destination-overlay h3{
+        font-size:20px;
+    }
+
+    .destination-overlay p{
+        font-size:14px;
+    }
+
+    .hero-content h1{
+        font-size:30px;
+    }
+
+    .hero-content p{
+        font-size:14px;
+    }
+
+    .hero-btn{
+        padding:12px 28px;
+    }
+
+    .floating-buttons{
+        right:15px;
+        bottom:15px;
+    }
+
+    .floating-buttons a{
+        width:50px;
+        height:50px;
+    }
+}
