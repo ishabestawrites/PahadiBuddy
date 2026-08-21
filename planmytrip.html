@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plan Your Trip | PahadiBuddy</title>
+
+    <meta name="description"
+          content="Plan your perfect journey with PahadiBuddy. Tell us your destination, travel days, pickup location and number of travellers.">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <img src="logo.jpeg" alt="PahadiBuddy Logo">
+
+            <h2>PahadiBuddy</h2>
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="packages.html">Tour Packages</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <div class="menu-icon" id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="packages.html">Tour Packages</a>
+
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     PLAN YOUR TRIP
+========================= -->
+
+<section class="plan-trip">
+
+
+    <div class="plan-box">
+
+
+        <!-- HEADING -->
+
+        <div class="plan-heading">
+
+            <h1>Plan Your Trip</h1>
+
+            <p>
+                Tell us your destination and we'll take care of the journey.
+            </p>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <form class="trip-form" id="tripForm">
+
+
+            <!-- NAME -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- DESTINATION -->
+
+            <div class="form-group">
+
+                <label for="destination">
+                    Destination
+                </label>
+
+                <input
+                    type="text"
+                    id="destination"
+                    name="destination"
+                    placeholder="Where do you want to go?"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- NUMBER OF DAYS -->
+
+            <div class="form-group">
+
+                <label for="days">
+                    Number of Days
+                </label>
+
+                <input
+                    type="number"
+                    id="days"
+                    name="days"
+                    min="1"
+                    placeholder="How many days?"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- PICKUP + DROP -->
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="pickup">
+                        Pickup Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="pickup"
+                        name="pickup"
+                        placeholder="Pickup from"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="drop">
+                        Drop Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="drop"
+                        name="drop"
+                        placeholder="Drop at"
+                        required
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- TRAVELLERS -->
+
+            <div class="form-group">
+
+                <label for="travellers">
+                    Number of Travellers
+                </label>
+
+                <input
+                    type="number"
+                    id="travellers"
+                    name="travellers"
+                    min="1"
+                    placeholder="How many travellers?"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <button
+                type="submit"
+                class="plan-button"
+            >
+
+                Plan My Trip
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     FLOATING BUTTONS
+========================= -->
+
+<div class="floating-buttons">
+
+
+    <a
+        href="https://wa.me/917876416232"
+        class="whatsapp"
+        target="_blank"
+        aria-label="WhatsApp"
+    >
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+
+    <a
+        href="tel:+919805000742"
+        class="call"
+        aria-label="Call"
+    >
+
+        <i class="fa-solid fa-phone"></i>
+
+    </a>
+
+
+</div>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+
+    <div class="footer-content">
+
+
+        <!-- ABOUT -->
+
+        <div class="footer-box">
+
+            <h3>PahadiBuddy</h3>
+
+            <p>
+                Your trusted travel companion for unforgettable journeys.
+            </p>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="packages.html">
+                Tour Packages
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+
+            <a href="tel:+919805000742">
+
+                <i class="fa-solid fa-phone"></i>
+
+                9805000742
+
+            </a>
+
+
+            <a
+                href="https://wa.me/917876416232"
+                target="_blank"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                7876416232
+
+            </a>
+
+
+            <a href="mailto:pahadibuddyofficial@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                pahadibuddyofficial@gmail.com
+
+            </a>
+
+
+            <a
+                href="https://instagram.com/pahadibuddy_"
+                target="_blank"
+            >
+
+                <i class="fa-brands fa-instagram"></i>
+
+                @PahadiBuddy_
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PahadiBuddy. All Rights Reserved.
+        </p>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script src="script.js"></script>
+
+
+<script>
+
+document.getElementById("tripForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const destination =
+        document.getElementById("destination").value.trim();
+
+    const days =
+        document.getElementById("days").value.trim();
+
+    const pickup =
+        document.getElementById("pickup").value.trim();
+
+    const drop =
+        document.getElementById("drop").value.trim();
+
+    const travellers =
+        document.getElementById("travellers").value.trim();
+
+
+    const message =
+`Hello PahadiBuddy! 👋
+
+I want to plan a trip.
+
+👤 Name: ${name}
+
+📍 Destination: ${destination}
+
+📅 Number of Days: ${days}
+
+🚗 Pickup Location: ${pickup}
+
+📍 Drop Location: ${drop}
+
+👥 Number of Travellers: ${travellers}
+
+Please help me plan this trip. Thank you!`;
+
+
+    const whatsappNumber = "917876416232";
+
+
+    const whatsappURL =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+</script>
+
+
+</body>
+
+</html>
